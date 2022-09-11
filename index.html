@@ -382,6 +382,18 @@
                   </li>
                 </ul>
               </div>
+              <div>
+                <p class="mail-imput">Підпишіться на розсилку</p>
+                <form class="mail-imput-form">
+                  <input type="email" class="footer-mail-input-form" name="E_mail" placeholder="E-mail">
+                <div class="footer-send-icon"><svg aria-label="іконка літачка" class="send-icon">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg><button type="submit" class="send-sumbit"><span class="modal-send-form">Підписатися</span>
+                </button>
+              </div>
+            </form>
+              
+            </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -391,8 +403,45 @@
           </use>
         </svg>
         </button>
+        <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <label class="modal-form-field">
+           <span class="modal-form-field-desc">Ім'я</span>
+           <span class="modal-icon">
+            <input type="text" class="modal-form-imput" required pattern="[a-zA-Zа-яА-ЯІіЇї]+" name="user_name"/>
+          <svg aria-label="іконка сілуєту" class="modal-icon-black">
+            <use href="./images/sprite.svg#icon-person-black"></use>
+          </svg></span>
+          </label>
+          <label class="modal-form-field">
+           <span class="modal-form-field-desc">Телефон</span>
+           <span class="modal-icon"><input type="tel" class="modal-form-imput" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" name="user_phone"/>
+          <svg aria-label="іконка телефону" class="modal-icon-black">
+            <use href="./images/sprite.svg#icon-phone-black"></use>
+          </svg></span>
+        </label> 
+           <label class="modal-form-field">
+           <span class="modal-form-field-desc">Пошта</span>
+           <span class="modal-icon"><input type="email" class="modal-form-imput" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  name="user_email"/>
+          <svg aria-label="іконка конверту" class="modal-icon-black">
+            <use href="./images/sprite.svg#icon-email-black"></use>
+          </svg>
+           </span>
+        </label>
+          <label class="modal-form-field">
+           <span class="modal-form-field-desc">Коментар</span>
+           <textarea name="user_message"  class="modal-form-message" placeholder="Введіть текст"></textarea>
+          </label> 
+          <label class="modal-form-check-field">
+            <input type="checkbox" class="modal-form-check" required name="user_polise">
+             <svg class="modal-form-own-checkbox">
+              <use class="modal-form-own-checkbox-icon" href="./images/sprite.svg#icon-icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю&nbsp;<a href="">Умови договору</a>
+          </label>
+          <button type="submit" class="modal-form-sumbit">Відправити</button>
+        </form>
       </div>
-    </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
